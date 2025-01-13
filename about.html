@@ -1,0 +1,320 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut Icon" type="image/jpg" href="about.jpg"></head>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Great Vibe', cursive;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background: url('images/butterfly.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #3e2e2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding-top: 8rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            font-family: 'Great Vibe', cursive;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+            background-color: rgba(216, 202, 174, 0.9); 
+        }
+
+        .logo {
+            font-family: 'Great Vibe', cursive;
+            color: #3e2e2e;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            margin: 0 1.5rem;
+            color: #3e2e2e;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .navmenu a:hover {
+            color: #a52a2a;
+        }
+
+
+        .intro-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.intro-section img {
+    width: 300px;
+    height: auto;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease;
+    border: 5px solid transparent;
+}
+
+.intro-section p {
+    flex: 1;
+    color: #000000; 
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 0;
+    text-align: justify;
+    transform: translateY(10%);
+}
+
+
+        section {
+            width: 100%;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .favorites {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .favorite-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .favorite-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #a52a2a;
+            margin-bottom: 1rem;
+        }
+
+        p, ul {
+            color: #3e2e2e;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 1rem;
+            background-color: rgba(216, 202, 174, 0.9);
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer p {
+            color: #3e2e2e;
+            margin: 0.5rem 0;
+        }
+
+        #songs {
+            margin: 2rem 0;
+        }
+
+        .audio-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .audio-container h3 {
+            font-size: 0.89rem;
+            color: #a52a2a;
+            margin-bottom: 1.5rem;
+        }
+
+        .audio-container audio {
+            width: 80%;
+            border-radius: 10px;
+            border: 3px solid #a52a2a;
+            outline: none;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .audio-container audio:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Amirah Qurratulela.</a>
+            <nav class="navmenu">
+                <a href="index.html">Home</a>
+                <a href="#about">About </a>
+                <a href="education.html">Education</a>
+                <a href="achievement.html">Achievement</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div class="intro-section" id="about">
+                <img src="images/kakak2.jpg" alt="Picture of Amirah">
+                <p>
+                    I may look fierce, but i am very soft and kind-hearted. I enjoy birthdays because that's the second day that it is all about you and people would cherish and show their affection more. I love when things go as planned and being punctual to an event.<br> 
+                    I am the type of person you can count on when u need a shoulder to cry on but can't pick you up from certain places because i'm scared of driving. I usually sleep late because i enjoy a good movie or tv shows. I rather listen to old RnB and Pop music than new ones. <br> 
+                    I'm also the type of person who would put my phone down whenever i am out with friends and families cause i want to enjoy the moment. I'm also the type of person who dislikes asking for help as i grew up being taught to be independent.<br>  
+                    I am capable of finishing all of my errands on time if i wake up early. <br> 
+                    I get very discouraged when i don't have enough time to relax my mind. It makes me sad that people don't include me any plans they are making.
+                </p>
+            </div>
+
+            <section id="favorites">
+                <h2>Favorites</h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/laksa.jpeg" alt="Laksa Sarawak">
+                        <h3>Favorite Food</h3>
+                        <p>Laksa Sarawak & Ayam goreng kunyit</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/teh.jpeg" alt="Teh Tarik">
+                        <h3>Favorite Drink</h3>
+                        <p>Coca cola & Teh tarik Peng</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/color.jpg" alt="Color">
+                        <h3>Favorite Colors</h3>
+                        <p>Red, Cream, and Black</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/movie.jpg" alt="Movie">
+                        <h3>Favorite Movies/TV Shows</h3>
+                        <p>iCarly, Law & Order, Grey's Anatomy</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="songs">
+                <h3>Favorite Songs</h3>
+                <div class="audio-container">
+                    <h3>I have nothing by Whitney Houston</h3>
+                    <audio controls>
+                        <source src="song3.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio-container">
+                    <h3>Forever by Chris Brown</h3>
+                    <audio controls>
+                        <source src="song1.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                
+            </section>
+            <section id="hobbies">
+                <h3>Hobbies & Talents</h3>
+                <p>
+                    Performing (singing),
+                    Making youtube videos &
+                    Food hunting <br> 
+
+                    Make-up (cosmetics),
+                    Singing,
+                    Video-editing & 
+                    Creative designs
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Aelly Najwa.All rights reserved </p>
+        </footer>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const introImg = document.querySelector('.intro-section img');
+            const sections = document.querySelectorAll('section');
+            
+            if (isInViewport(introImg)) {
+                introImg.style.opacity = 1;
+            }
+
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top <= window.innerHeight && rect.bottom >= 0;
+        }
+    </script>
+</body>
+</html>

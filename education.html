@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="shortcut Icon" type="image/jpg" href="education.jpg"></head>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Great Vibe', cursive;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background: url('images/butterfly.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #3e2e2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 8rem 2rem 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            font-family: 'Great Vibe', cursive;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+            background-color: rgba(216, 202, 174, 0.95);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-family: 'Great Vibe', cursive;
+            color: #3e2e2e;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            margin: 0 1.5rem;
+            color: #3e2e2e;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .navmenu a:hover {
+            color: #a52a2a;
+            text-shadow: 0 0 8px rgba(165, 42, 42, 0.5);
+        }
+
+        .intro-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .intro-section img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateX(-100%);
+            animation: slideInLeft 1s ease-in-out forwards;
+        }
+
+        .intro-section .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 55%;
+        }
+        .intro-section video {
+             width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateX(100%);
+            animation: slideInRight 1s ease-in-out forwards;
+            margin-top: 3rem; /* Adjust the value to control the space */
+        }
+
+        .education-list {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        .education-list h3 {
+            color: #a52a2a;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .education-list li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            padding: 1rem;
+            background-color: rgba(216, 202, 174, 0.9);
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer p {
+            color: #3e2e2e;
+            margin: 0.5rem 0;
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Amirah Qurratullea</a>
+            <nav class="navmenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About </a>
+                <a href="education.html">Education</a>
+                <a href="achievement.html">Achievement</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div class="intro-section" id="about">
+                <img src="images/kakak.jpg" alt="Picture of Amirah">
+                <div class="content-section">
+                    <video controls>
+                        <source src="videos/convo.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="education-list">
+                        <h3>Education</h3>
+                        <ul>
+                            <li><strong>SPM 2019</strong> - St. Teresa Kuching</li>
+                            <li><strong>Diploma UiTM Merbau 2020-2023</strong> - Mass Communication</li>
+                            <li><strong>Bachelor UiTM Shah Alam 2023-2025</strong> - Mass Communication (Hons) Advertising</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Aelly Najwa.All rights reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const educationList = document.querySelector('.education-list');
+            const rect = educationList.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                educationList.style.animationPlayState = 'running';
+            }
+        });
+    </script>
+</body>
+</html>

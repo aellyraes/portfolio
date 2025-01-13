@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievement</title>
+    <link rel="shortcut Icon" type="image/jpg" href="achievement.jpg">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Great Vibe', cursive;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background: url('images/butterfly.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #3e2e2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+            font-size: 1.1rem; 
+        }
+
+        .container {
+            width: 80%;  
+            max-width: 1200px;
+            padding-top: 8rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            font-family: 'Great Vibe', cursive;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+            background-color: rgba(216, 202, 174, 0.9);
+        }
+
+        .logo {
+            font-family: 'Great Vibe', cursive;
+            color: #3e2e2e;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            margin: 0 1.5rem;
+            color: #3e2e2e;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .navmenu a:hover {
+            color: #a52a2a;
+        }
+
+
+        .slideshow-container {
+            position: relative;
+            max-width: 500px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 3px;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .dot-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
+
+        #achievement {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin-top: 4rem;
+            padding: 3rem;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #achievement h2 {
+            font-size: 2rem;
+            color: #3e2e2e;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        #achievement ul {
+            text-align: left;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        #achievement li {
+            margin-bottom: 0.5rem;
+        }
+
+        #achievement img {
+            width: 80%; /* Fit within 80% of the container */
+            max-width: 600px; /* Ensure images don't become too large */
+            height: auto; /* Maintain aspect ratio */
+            margin: 1rem auto; /* Center the images */
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+        }
+
+        footer {
+            padding: 1rem;
+            background-color: rgba(216, 202, 174, 0.9);
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem; 
+        }
+
+        footer p {
+            color: #3e2e2e;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Amirah Qurratulela.</a>
+            <nav class="navmenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About </a>
+                <a href="education.html">Education</a>
+                <a href="achievement.html">Achievement</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </header>
+
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/gold.jpg" alt="Gold Achievement">
+                <p>Gold Medal for UX&UI design Inovasi 2023</p>
+            </div>
+            <div class="slides">
+                <img src="images/kuku.jpg" alt="Kuku Achievement">
+                <p>Vice Chancellor Awards in Diploma in Mass Communication</p>
+            </div>
+            <div class="slides">
+                <img src="images/ice.jpg" alt="Ice Achievement">
+                <p>Design During Diploma</p>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <section id="achievement">
+            <h2>Achievements</h2>
+            <ul>
+                <li><strong>Diploma Final Year Project:</strong> Le Tour De Nogori (Big Event: NOGORIHOOD) 
+                    <br>Department: Publicity</li>
+                <img src="images/congkak.jpg" alt="Nogorihood Congkak">
+                <img src="images/pis.jpg" alt="Nogorihood PIS">
+                <li><strong>IPSis:</strong> Head of Copywriting 
+                    <br>- Managed all copywrites for posters and caption published on social media.</li>
+                <img src="images/uni.jpg" alt="IPSis Project">
+                <img src="images/balance.jpg" alt="IPSis Project">
+                <li><strong>KWSP Pitching Campaign 2024:</strong> Vice Project Manager 
+                    <br>- Ensured creative designs aligned with KWSP's objectives.
+                    <br>- Won 3rd Place on Dec 20, 2024.</li>
+                <img src="images/chill.jpg" alt="KWSP Campaign 1">
+                <img src="images/chill2.jpg" alt="KWSP Campaign 2">
+                <img src="images/chill3.jpg" alt="KWSP Campaign 3">
+                <li><strong>Creative Poster Designs:</strong> KWSP Campaign Projects</li>
+                <img src="images/nadhir .jpg" alt="Design Work 1">
+                <img src="images/tabung.jpg" alt="Design Work 2">
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2024 Aelly Najwa.All rights reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        autoSlides();
+
+        function autoSlides() {
+            const slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(autoSlides, 5000); // Change slide every 5 seconds
+        }
+
+        function changeSlide(n) {
+            slideIndex += n - 1; 
+            autoSlides();
+        }
+    </script>
+</body>
+</html>
